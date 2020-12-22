@@ -1,0 +1,147 @@
+:root {
+    --main-color: blueviolet;
+    --sec-color: white;
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url("../fonts/Oxygen-Regular.ttf")
+}
+
+@font-face {
+    font-family: Oxygen-bold;
+    src: url("../fonts/Oxygen-Bold.ttf");
+}
+
+html {
+    font-family: Oxygen;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+#bg {
+    background-image: url("../img/background.jpg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/*---------------------------------------
+    BARRA SUPERIOR       
+-----------------------------------------*/
+
+#barraSuperior {
+    background-color: var(--sec-color);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: var(--main-color);
+}
+
+.nav-bar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-list-item,
+.nav-bar-list-large {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;
+    float: left;
+}
+
+.large {
+    font-family: Oxygen-bold;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    width: 300px;
+}
+
+.nav-bar-list-item a,
+.nav-bar-list-large a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+.nav-bar-list-item:hover {
+    background-color: var(--main-color);
+}
+
+.nav-bar-list-item a:hover {
+    color: var(--sec-color)
+}
+
+.active {
+    background-color: var(--main-color);
+}
+
+.active a {
+    color: var(--sec-color);
+}
+
+.icon-logo {
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+/*-------------------------------------
+    GRID
+---------------------------------------*/
+
+.row {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+
+/*------------------------------------------
+    PRIMERA SECCION
+---------------------------------------------*/
+
+.image {
+    width: 450px;
+}
+
+#rightInfo {
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-column-start: 8;
+    grid-column-end: 13;
+}
+
+#leftInfo {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: var(--sec-color);
+    grid-column-start: 1;
+    grid-column-end: 8;
+}
+
+#banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 70px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
