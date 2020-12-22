@@ -427,23 +427,32 @@ p {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-#login{
+
+
+/*-----------------
+    registro e inicio de sesion
+*/
+
+#login {
     position: relative;
     background: white;
-    top: 160px;
+    margin-top: 90px;
 }
-#crear{
+
+#crear {
     position: relative;
     background: white;
-    top: 95px;
+    margin-top: 70px;
 }
-.inicio{
+
+.inicio {
     text-align: center;
     position: relative;
     bottom: 20px;
     font-size: 30px;
     font-family: Oxygen-Bold;
 }
+
 .form {
     position: relative;
     background: #FFFFFF;
@@ -456,6 +465,7 @@ p {
     border-bottom-right-radius: 10px;
     text-align: center;
 }
+
 .form .thumbnail {
     background: blueviolet;
     width: 150px;
@@ -468,10 +478,12 @@ p {
     border-bottom-right-radius: 100%;
     box-sizing: border-box;
 }
+
 .form .thumbnail img {
     display: block;
     width: 100%;
 }
+
 .form input {
     outline: 0;
     background: #f2f2f2;
@@ -486,6 +498,7 @@ p {
     box-sizing: border-box;
     font-size: 14px;
 }
+
 .form button {
     outline: 0;
     background: blueviolet;
@@ -502,11 +515,13 @@ p {
     transition: all 0.3 ease;
     cursor: pointer;
 }
+
 .form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
     font-size: 12px;
 }
+
 .form .message a {
     color: blueviolet;
     text-decoration: none;
