@@ -133,13 +133,11 @@ p {
 }
 
 .right-image {
-    margin-right: 0px;
     grid-column-start: 8;
     grid-column-end: 13;
 }
 
 .left-image {
-    margin-right: 0px;
     grid-column-start: 1;
     grid-column-end: 6;
 }
@@ -172,6 +170,20 @@ p {
 
 #banner {
     margin-top: 100px;
+}
+
+
+/*------------------
+    Temario
+-------------------*/
+
+.temario {
+    margin: auto;
+    width: 80%;
+}
+
+.link {
+    color: var(--sec-color);
 }
 
 
@@ -343,4 +355,47 @@ p {
     to {
         opacity: 1
     }
+}
+
+
+/* ------------------------------
+    Acordeones del temario
+---------------------------------*/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
