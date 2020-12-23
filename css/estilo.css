@@ -540,5 +540,34 @@ table.mapa td, table.mapa th {
     font-size: larger;
     border-radius: 10px;
     border: 5px solid white;
+/*-----------------
+   Certificados
+*/
+}
+.r1,.r2,.r3{
+    position:absolute;
+    width: 500px;
+}
+.r1{
+    top: 120px;
+    left: 1%;
+}
+.r2{
+    top: 80px;
+    left: 34%;
+}
+.r3{
+    top: 120px;
+    left: 67%;
+}
 
+.c1,.c2,.c3{
+    width: 400px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desc{
+    bottom: 40px;
+    border-radius: 20px 20px 20px 20px;
 }
