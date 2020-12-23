@@ -526,3 +526,19 @@ p {
     color: blueviolet;
     text-decoration: none;
 }
+
+/*-----------------
+    Mapa curricular
+*/
+
+table.mapa {
+    width: 900px;
+    height: 800px;
+  }
+table.mapa td, table.mapa th {
+    
+    font-size: larger;
+    border-radius: 10px;
+    border: 5px solid white;
+
+}
